@@ -505,7 +505,7 @@ a:visited {
 #particles-js {
     position: absolute;
     width: 100vw;
-    height: auto;
+    height: 100%;
     background-image: url("");
     background-repeat: no-repeat;
     background-size: cover;
@@ -1108,6 +1108,10 @@ a:visited {
 
 .sponser-logo {
     max-width: 100%;
+}
+
+.sponser-logo:hover {
+    animation: pulse 2s ease infinite;
 }
 
 .input-field .prefix.active {
