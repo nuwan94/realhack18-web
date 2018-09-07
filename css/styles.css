@@ -43,7 +43,7 @@ h6 {
 
 p {
     font-size: 1.1rem;
-    color: #7b7b7b
+    color: #333
 }
 
 /* Padding */
@@ -492,31 +492,40 @@ a:visited {
     height: 100vh;
     max-height: 900px;
     min-height: 700px;
-    background-size: cover;
     color: #212121;
     padding-top: 64px;
     background-image:url('../images/back.png');
+    background-size: cover;
     background-position:left top;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow: hidden;
 }
 
-#main-header canvas {
+#particles-js {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: 100;
+  }
+
+  canvas {
+    display: block;
+    vertical-align: bottom;
+  }
+
+/* #main-header canvas {
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     z-index: 11;
     height: 100%;
-}
-
-#main-header .gradient-color {
-    z-index: 0
-}
-
-#main-header .overlay {
-    opacity: 0.9
-}
+} */
 
 #main-header .header-section {
     position: relative;
@@ -891,9 +900,12 @@ a:visited {
         display: flex
     }
 
-    #main-header {
-        background:#fff;
+    #main-header{
         max-height: 1500px
+    }
+
+    #main-header,#timeline, #sponsership{
+        background:#fff !important;
     }
 
     #main-header .title-link {
@@ -1123,6 +1135,16 @@ a:visited {
 
 
 /* Timeline */
+
+#timeline, #sponsership{
+    background-image:url('../images/back.png');
+    background-size: cover;
+    background-position:left top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
 .timeline {
     position: relative;
     overflow: auto;
