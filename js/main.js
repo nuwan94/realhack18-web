@@ -1,16 +1,16 @@
 ! function ($) {
     "use strict";
-    
+
     var e = $(window);
     e.on("load", function () {
         $(".pre-loader").fadeOut("slow").delay(5000),
-        $('.parallax').parallax(),
-        $('body').css('position','static'), 
-        AOS.refresh(),
-        $("#numOfTeams").html(numberOfTeam),
-        $("#Place1").html(Prices[0]),
-        $("#Place2").html(Prices[1]),
-        $("#Place3").html(Prices[2])
+            $('.parallax').parallax(),
+            $('body').css('position', 'static'),
+            AOS.refresh(),
+            $("#numOfTeams").html(numberOfTeam),
+            $("#Place1").html(Prices[0]),
+            $("#Place2").html(Prices[1]),
+            $("#Place3").html(Prices[2])
     }), $(document).ready(function () {
 
         function a(e) {
@@ -59,64 +59,170 @@
             C = e.width(),
             y;
         e.on("resize", function () {
-            C != e.width() && (C = e.width(), l.sideNav("hide"))
-        }), 
-        r.on("click", function () {
-            $(this).toggleClass("open")
-        }), 
-        l.sideNav({
-            draggable: !0,
-            closeOnClick: !0,
-            onOpen: function () {
-                i.addClass("open")
-            },
-            onClose: function () {
-                i.removeClass("open")
-            }
-        }), 
-        $(".dropdown-button").dropdown({
-            belowOrigin: !0,
-            constrainWidth: !1
-        }),  
-        setInterval(function () {
-            $(".carousel").carousel("next")
-        }, 1e4), 
-        $(".collapsible").collapsible(), 
-        // e.on("scroll", function () {
-        //     if (p = !0, y = $(this).scrollTop(), y > 1e3) return void v.css({
-        //         opacity: 1
-        //     });
-        //     var e = 1 - (d - y + h) / h + 1;
-        //     1 > e ? v.css({
-        //         opacity: e
-        //     }) : v.css({
-        //         opacity: 1
-        //     })
-        // }), 
-        // 0 === $(document).scrollTop() && v.css({
-        //     opacity: 0
-        // }),
-        $.scrollIt({
-            easing: "ease-out",
-            topOffset: -1
-        });
-        
+                C != e.width() && (C = e.width(), l.sideNav("hide"))
+            }),
+            r.on("click", function () {
+                $(this).toggleClass("open")
+            }),
+            l.sideNav({
+                draggable: !0,
+                closeOnClick: !0,
+                onOpen: function () {
+                    i.addClass("open")
+                },
+                onClose: function () {
+                    i.removeClass("open")
+                }
+            }),
+            $(".dropdown-button").dropdown({
+                belowOrigin: !0,
+                constrainWidth: !1
+            }),
+            setInterval(function () {
+                $(".carousel").carousel("next")
+            }, 1e4),
+            $(".collapsible").collapsible(),
+            // e.on("scroll", function () {
+            //     if (p = !0, y = $(this).scrollTop(), y > 1e3) return void v.css({
+            //         opacity: 1
+            //     });
+            //     var e = 1 - (d - y + h) / h + 1;
+            //     1 > e ? v.css({
+            //         opacity: e
+            //     }) : v.css({
+            //         opacity: 1
+            //     })
+            // }), 
+            // 0 === $(document).scrollTop() && v.css({
+            //     opacity: 0
+            // }),
+            $.scrollIt({
+                easing: "ease-out",
+                topOffset: -1
+            });
+
         AOS.init({
-            disable: "mobile",
-            once: !0,
-            duration: 400,
-            easing: "ease-in-sine"
-        }), 
-        $(".counter").counterUp({
-            delay: 100,
-            time: 1000
-        }),  
-        $(".same-height").matchHeight({
-            property: "min-height",
-            byRow: !1
-        });
+                disable: "mobile",
+                once: !0,
+                duration: 400,
+                easing: "ease-in-sine"
+            }),
+            $(".counter").counterUp({
+                delay: 100,
+                time: 1000
+            }),
+            $(".same-height").matchHeight({
+                property: "min-height",
+                byRow: !1
+            });
         var k = $(".count-down-wrapper"),
             I = "Oct 15 2018 09:00:00 GMT+0530";
         k.length && s("clockdiv", I)
     })
 }(jQuery);
+
+particlesJS("particles-js", {
+    particles: {
+        number: {
+            value: 80,
+            density: {
+                enable: true,
+                value_area: 800
+            }
+        },
+        color: {
+            value: "#333"
+        },
+        shape: {
+            type: "circle",
+            stroke: {
+                width: 0,
+                color: "#333"
+            },
+            polygon: {
+                nb_sides: 5
+            }
+        },
+        opacity: {
+            value: 0.5,
+            random: false,
+            anim: {
+                enable: false,
+                speed: 1,
+                opacity_min: 0.1,
+                sync: false
+            }
+        },
+        size: {
+            value: 3,
+            random: true,
+            anim: {
+                enable: false,
+                speed: 40,
+                size_min: 0.1,
+                sync: false
+            }
+        },
+        line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#333",
+            opacity: 0.4,
+            width: 1
+        },
+        move: {
+            enable: true,
+            speed: 6,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false,
+            attract: {
+                enable: false,
+                rotateX: 600,
+                rotateY: 1200
+            }
+        }
+    },
+    interactivity: {
+        detect_on: "canvas",
+        events: {
+            onhover: {
+                enable: true,
+                mode: "grab"
+            },
+            onclick: {
+                enable: true,
+                mode: "push"
+            },
+            resize: true
+        },
+        modes: {
+            grab: {
+                distance: 400,
+                line_linked: {
+                    opacity: 1
+                }
+            },
+            bubble: {
+                distance: 400,
+                size: 40,
+                duration: 2,
+                opacity: 8,
+                speed: 3
+            },
+            repulse: {
+                distance: 200,
+                duration: 0.4
+            },
+            push: {
+                particles_nb: 4
+            },
+            remove: {
+                particles_nb: 2
+            }
+        }
+    },
+    retina_detect: true
+});
