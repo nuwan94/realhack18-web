@@ -130,7 +130,7 @@ p {
     z-index: 10
 }
 
-.reflection-text {
+.section-header {
     position: relative;
     color: #353535;
     text-align: center;
@@ -256,9 +256,9 @@ a:visited {
     margin: 0 auto
 }
 
-#main-nav .logo {
+/* #main-nav .logo {
     width: 120px
-}
+} */
 
 #main-nav .brand-logo {
     display: -webkit-box;
@@ -277,8 +277,8 @@ a:visited {
 
 #main-nav .brand-logo .logo {
     max-width: 100%;
-    padding-right: 1rem;
-    width: 60px
+    /* padding-right: 1rem; */
+    max-width: 120px
 }
 
 #main-nav .brand-logo .title-link {
