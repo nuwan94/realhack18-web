@@ -425,60 +425,6 @@ a:visited {
     padding: 0 44px
 }
 
-#main-nav .side-nav .social {
-    margin-bottom: 4rem
-}
-
-#main-nav .social {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap
-}
-
-#main-nav .social a {
-    display: inline-block;
-    border-bottom: none;
-    padding: 0;
-    margin: 0
-}
-
-#main-nav .social i {
-    border-radius: 100px;
-    font-size: 1.4rem;
-    width: 45px;
-    height: 45px;
-    -webkit-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    color: #ffffff;
-    margin: 0 0.5rem
-}
-
-#main-nav .social i:hover {
-    box-shadow: 0 10px 10px rgba(185, 185, 185, 0.1)
-}
-
 #sidenav-overlay {
     z-index: 101
 }
@@ -784,31 +730,42 @@ a:visited {
     transform: translateY(-2px)
 }
 
-#footer .address .address-icon {
+#footer .right-panel .right-panel-icon {
     padding: 0 1rem;
     font-size: 2rem;
     color: #292929
 }
 
-#footer .address p {
+#footer .right-panel p {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex
 }
 
-#footer .address a {
+#footer .right-panel a {
     color: inherit
 }
 
-#footer .address a:hover {
+#footer .right-panel a:hover {
     color: #0b0b0b
 }
 
-#footer .address span {
+#footer .right-panel span {
     text-align: left
 }
 
+#footer .social-media a{
+    margin: 1em .5em;
+}
+
+#footer .social-media a:hover{
+    opacity: 0.8;
+}
+
+.fa-facebook {color: #3b5998;}
+.fa-twitter {color: #55acee;}
+.fa-instagram {color: #c13584;}
 
 #copy-rights {
     background: url("../images/footer.png") repeat
@@ -845,35 +802,6 @@ a:visited {
     max-width: 100%;
 }
 
-#copy-rights .social-icons {
-    margin-top: 1rem;
-    font-size: 1rem;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1 0 auto;
-    -ms-flex: 1 0 auto;
-    flex: 1 0 auto;
-    text-align: center
-}
-
-#copy-rights i {
-    width: 30px;
-    height: 30px;
-    margin: 0 0.2rem;
-    color: #e2e2e2;
-    display: -webkit-inline-box;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    border: none
-}
 @media screen and (min-width: 1400px) {
     #main-header .title-link {
         font-size: 6rem
@@ -964,7 +892,7 @@ a:visited {
         display: block
     }
 
-    #footer .address {
+    #footer .right-panel {
         padding-top: 2rem
     }
 
