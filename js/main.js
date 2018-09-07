@@ -4,6 +4,7 @@
     var e = $(window);
     e.on("load", function () {
         $(".pre-loader").fadeOut("slow").delay(5000),
+        $('.parallax').parallax(),
         $('body').css('position','static'), 
         AOS.refresh(),
         $("#numOfTeams").html(numberOfTeam),
