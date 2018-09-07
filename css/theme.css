@@ -1,0 +1,99 @@
+/* Color Classes */
+
+.theme-purple{
+    background: #880E4F;
+}
+
+.theme-purple-light{
+    background: #aa5dab;
+}
+
+.theme-pink{
+    background: #f1296a;
+}
+
+.theme-red{
+    background: #d32f2f;
+}
+
+.theme-pink-light{
+    background: #ffa3b8;
+}
+
+.theme-cream{
+    background: #ffbe88;
+}
+
+.theme-blue{
+    background: #ab8eeb;
+}
+
+.theme-black {
+    background: #212121;
+}
+
+.theme-grey{
+    background: #ddd;
+}
+
+/* Text Colours */
+
+.text-purple{
+    color:#a31e71;
+}
+
+.text-pink{
+    color:#f1296a;
+}
+
+.text-red{
+    color:#d32f2f;
+}
+
+.text-cream{
+    color:#ffbe88;
+}
+
+.text-blue{
+    color:#0277BD;
+}
+
+.text-black{
+    color:#212121;
+}
+
+.text-white{
+    color:#fff;
+}
+
+/* Animations */
+
+.trans-05{
+    transition: .5s linear;
+    -webkit-transition: .5s linear;
+    -o-transition: .5s linear;
+}
+
+.trans-1{
+    transition: 1s linear;
+    -webkit-transition: 1s linear;
+    -o-transition: 1s linear;
+}
+
+.anim-1{
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    -o-animation-duration: 1s;
+}
+
+.anim-2{
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    -o-animation-duration: 2s;
+}
+
+.anim-3{
+    animation-duration: 3s;
+    -webkit-animation-duration: 4s;
+    -o-animation-duration: 3s;
+}
