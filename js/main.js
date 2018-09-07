@@ -162,7 +162,7 @@ particlesJS("particles-js", {
     interactivity: {
       detect_on: "canvas",
       events: {
-        onhover: { enable: false, mode: "grab" },
+        onhover: { enable: true, mode: "grab" },
         onclick: { enable: false, mode: "remove" },
         resize: true
       },
