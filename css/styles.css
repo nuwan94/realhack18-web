@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,500");
+@import url("https://fonts.googleapis.com/css?family=Oswald|Roboto:400,500");
 
 html {
     font-size: 14px;
@@ -259,7 +259,6 @@ a:visited {
 /* #main-nav .logo {
     width: 120px
 } */
-
 #main-nav .brand-logo {
     display: -webkit-box;
     display: -webkit-flex;
@@ -440,9 +439,9 @@ a:visited {
     min-height: 700px;
     color: #212121;
     padding-top: 64px;
-    background-image:url('../images/back.png');
+    background-image: url('../images/back.png');
     background-size: cover;
-    background-position:left top;
+    background-position: left top;
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow: hidden;
@@ -457,12 +456,11 @@ a:visited {
     background-size: cover;
     background-position: 50% 50%;
     z-index: 100;
-  }
+}
 
-  canvas {
+canvas {
     display: block;
-    vertical-align: bottom;
-  }
+}
 
 /* #main-header canvas {
     position: absolute;
@@ -472,7 +470,6 @@ a:visited {
     z-index: 11;
     height: 100%;
 } */
-
 #main-header .header-section {
     position: relative;
     height: 100%;
@@ -618,8 +615,8 @@ a:visited {
     color: inherit
 }
 
-#registration .regbtn{
-    width:100%;
+#registration .regbtn {
+    width: 100%;
     padding: 1em;
 }
 
@@ -633,19 +630,19 @@ a:visited {
 
 .PlacePrize {
     font-size: 3em;
-    color:#333;
+    color: #333;
     line-height: 3em;
     background: #fff;
 }
 
-#registration .download-link{
+#registration .download-link {
     display: inline-block;
     padding: 1em;
     color: #221121;
 }
 
-#registration #numOfTeams{
-    color:#d32f2f;
+#registration #numOfTeams {
+    color: #d32f2f;
 }
 
 #footer {
@@ -755,17 +752,25 @@ a:visited {
     text-align: left
 }
 
-#footer .social-media a{
+#footer .social-media a {
     margin: 1em .5em;
 }
 
-#footer .social-media a:hover{
+#footer .social-media a:hover {
     opacity: 0.8;
 }
 
-.fa-facebook {color: #3b5998;}
-.fa-twitter {color: #55acee;}
-.fa-instagram {color: #c13584;}
+.fa-facebook {
+    color: #3b5998;
+}
+
+.fa-twitter {
+    color: #55acee;
+}
+
+.fa-instagram {
+    color: #c13584;
+}
 
 #copy-rights {
     background: url("../images/footer.png") repeat
@@ -828,12 +833,14 @@ a:visited {
         display: flex
     }
 
-    #main-header{
+    #main-header {
         max-height: 1500px
     }
 
-    #main-header,#timeline, #sponsership{
-        background:#fff !important;
+    #main-header,
+    #timeline,
+    #sponsership {
+        background: #fff !important;
     }
 
     #main-header .title-link {
@@ -967,57 +974,67 @@ a:visited {
     z-index: 10000;
     overflow: hidden;
 }
+
 /* -------------- loader2 -------------- */
-
-.loader2{
-	position: relative;
-	width: 5px;
-	height: 5px;
-	background-color: #fff;
-	border-radius: 50px;
+.loader2 {
+    position: relative;
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 50px;
 }
 
-.loader2:before{
-	content: "";
-	position: absolute;
-	top: -38px;
-	border-top: 3px solid #fff;
-	border-right: 3px solid #fff;
-	border-radius: 0 50px 0px  0;
-	width: 40px;
-	height: 40px;
-	background-color: rgba(255, 255, 255, .1);
-	-webkit-transform-origin:  0% 100%;
-			transform-origin:  0% 100% ;
-	-webkit-animation: loader2 1.5s linear infinite;
-			animation: loader2 1.5s linear infinite;
+.loader2:before {
+    content: "";
+    position: absolute;
+    top: -38px;
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
+    border-radius: 0 50px 0px 0;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, .1);
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+    -webkit-animation: loader2 1.5s linear infinite;
+    animation: loader2 1.5s linear infinite;
 }
 
-.loader2:after{
-	content: "";
-	position: absolute;
-	top: 2px;
-	right: 2px;
-	border-bottom: 3px solid #fff;
-	border-left: 3px solid #fff;
-	border-radius: 0 0px 0px  50px;
-	width: 40px;
-	height: 40px;
-	background-color: rgba(255, 255, 255, .1);
-	-webkit-transform-origin:  100% 0%;
-			transform-origin:  100% 0% ;
-	-webkit-animation: loader2 1.5s linear infinite;
-			animation: loader2 1.5s linear infinite;
+.loader2:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    border-bottom: 3px solid #fff;
+    border-left: 3px solid #fff;
+    border-radius: 0 0px 0px 50px;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, .1);
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+    -webkit-animation: loader2 1.5s linear infinite;
+    animation: loader2 1.5s linear infinite;
 }
 
-@-webkit-keyframes loader2{
-    0%{-webkit-transform:rotate(0deg);}
-    100%{-webkit-transform:rotate(360deg);}
+@-webkit-keyframes loader2 {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
 }
 
-@keyframes loader2{
-    0%{transform:rotate(0deg);}
-    100%{transform:rotate(360deg);}
+@keyframes loader2 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .loader {
@@ -1032,7 +1049,7 @@ a:visited {
     justify-content: center;
     align-items: center;
     background-color: #212121;
-} 
+}
 
 .sponser-logo {
     max-width: 100%;
@@ -1064,14 +1081,12 @@ a:visited {
     background: #aa5dab;
 }
 
-
-
 /* Timeline */
-
-#timeline, #sponsership{
-    background-image:url('../images/back.png');
+#timeline,
+#sponsership {
+    background-image: url('../images/back.png');
     background-size: cover;
-    background-position:left top;
+    background-position: left top;
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow: hidden;
@@ -1210,57 +1225,54 @@ a:visited {
     .timeline li:nth-of-type(2n+1) {
         clear: both;
     }
-
-    .timeline .end {}
 }
 
-
-.main-example {
-    margin: 0 auto;
+/* Flipclock */
+.count-clock {
+    margin: 30px auto;
     width: 355px;
-  }
-  .main-example .countdown-container {
+}
+
+.count-clock .countdown-container {
     height: 130px;
-  }
-  .main-example .time {
+}
+
+.count-clock .time {
     border-radius: 5px;
-    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
     display: inline-block;
     text-align: center;
     position: relative;
     height: 95px;
     width: 65px;
-  
     -webkit-perspective: 479px;
     -moz-perspective: 479px;
     -ms-perspective: 479px;
     -o-perspective: 479px;
     perspective: 479px;
-  
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
     -o-backface-visibility: hidden;
     backface-visibility: hidden;
-  
     -webkit-transform: translateZ(0);
     -moz-transform: translateZ(0);
     -ms-transform: translateZ(0);
     -o-transform: translateZ(0);
     transform: translateZ(0);
-  
-    -webkit-transform: translate3d(0,0,0);
-    -moz-transform: translate3d(0,0,0);
-    -ms-transform: translate3d(0,0,0);
-    -o-transform: translate3d(0,0,0);
-    transform: translate3d(0,0,0);
-  }
-  .main-example .count {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.count-clock .count {
     background: #202020;
     color: #f8f8f8;
     display: block;
     font-family: 'Oswald', sans-serif;
-    font-size: 2em;
+    font-size: 2.8em;
     line-height: 2.4em;
     overflow: hidden;
     position: absolute;
@@ -1268,121 +1280,125 @@ a:visited {
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
     top: 0;
     width: 100%;
-  
     -webkit-transform: translateZ(0);
     -moz-transform: translateZ(0);
     -ms-transform: translateZ(0);
     -o-transform: translateZ(0);
     transform: translateZ(0);
-  
     -webkit-transform-style: flat;
     -moz-transform-style: flat;
     -ms-transform-style: flat;
     -o-transform-style: flat;
     transform-style: flat;
-  }
-  .main-example .count.top {
-    border-top: 1px solid rgba(255,255,255,0.2);
-    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.count-clock .count.top {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 5px 5px 0 0;
     height: 50%;
-  
     -webkit-transform-origin: 50% 100%;
     -moz-transform-origin: 50% 100%;
     -ms-transform-origin: 50% 100%;
     -o-transform-origin: 50% 100%;
     transform-origin: 50% 100%;
-  }
-  .main-example .count.bottom {
-    background-image: linear-gradient(rgba(255,255,255,0.1), transparent);
-    background-image: -webkit-linear-gradient(rgba(255,255,255,0.1), transparent);
-    background-image: -moz-linear-gradient(rgba(255,255,255,0.1), transparent);
-    background-image: -ms-linear-gradient(rgba(255,255,255,0.1), transparent);
-    background-image: -o-linear-gradient(rgba(255,255,255,0.1), transparent);
+}
+
+.count-clock .count.bottom {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), transparent);
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.1), transparent);
+    background-image: -moz-linear-gradient(rgba(255, 255, 255, 0.1), transparent);
+    background-image: -ms-linear-gradient(rgba(255, 255, 255, 0.1), transparent);
+    background-image: -o-linear-gradient(rgba(255, 255, 255, 0.1), transparent);
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     border-radius: 0 0 5px 5px;
     line-height: 0;
     height: 50%;
     top: 50%;
-  
     -webkit-transform-origin: 50% 0;
     -moz-transform-origin: 50% 0;
     -ms-transform-origin: 50% 0;
     -o-transform-origin: 50% 0;
     transform-origin: 50% 0;
-  }
-  .main-example .count.next {
-  }
-  .main-example .label {
+}
+
+.count-clock .label {
     font-size: normal;
     margin-top: 5px;
     display: block;
     position: absolute;
     top: 95px;
     width: 100%;
-  }
-  /* Animation start */
-  .main-example .count.curr.top {
+}
+
+/* Animation start */
+.count-clock .count.curr.top {
     -webkit-transform: rotateX(0deg);
     -moz-transform: rotateX(0deg);
     -ms-transform: rotateX(0deg);
     -o-transform: rotateX(0deg);
     transform: rotateX(0deg);
     z-index: 3;
-  }
-  .main-example .count.next.bottom {
+}
+
+.count-clock .count.next.bottom {
     -webkit-transform: rotateX(90deg);
     -moz-transform: rotateX(90deg);
     -ms-transform: rotateX(90deg);
     -o-transform: rotateX(90deg);
     transform: rotateX(90deg);
     z-index: 2;
-  }
-  /* Animation end */
-  .main-example .flip .count.curr.top {
+}
+
+/* Animation end */
+.count-clock .flip .count.curr.top {
     -webkit-transition: all 250ms ease-in-out;
     -moz-transition: all 250ms ease-in-out;
     -ms-transition: all 250ms ease-in-out;
     -o-transition: all 250ms ease-in-out;
     transition: all 250ms ease-in-out;
-  
     -webkit-transform: rotateX(-90deg);
     -moz-transform: rotateX(-90deg);
     -ms-transform: rotateX(-90deg);
     -o-transform: rotateX(-90deg);
     transform: rotateX(-90deg);
-  }
-  .main-example .flip .count.next.bottom {
+}
+
+.count-clock .flip .count.next.bottom {
     -webkit-transition: all 250ms ease-in-out 250ms;
     -moz-transition: all 250ms ease-in-out 250ms;
     -ms-transition: all 250ms ease-in-out 250ms;
     -o-transition: all 250ms ease-in-out 250ms;
     transition: all 250ms ease-in-out 250ms;
-  
     -webkit-transform: rotateX(0deg);
     -moz-transform: rotateX(0deg);
     -ms-transform: rotateX(0deg);
     -o-transform: rotateX(0deg);
     transform: rotateX(0deg);
-  }
-  @media screen and (max-width: 48em) {
-    .main-example {
-      width: 100%;
+}
+
+@media screen and (max-width: 48em) {
+    .count-clock {
+        width: 100%;
     }
-    .main-example .countdown-container {
-      height: 100px;
+
+    .count-clock .countdown-container {
+        height: 100px;
     }
-    .main-example .time {
+
+    .count-clock .time {
         height: 70px;
         width: 48px;
     }
-    .main-example .count {
-      font-size: 1.5em;
-      line-height: 70px;
+
+    .count-clock .count {
+        /* font-size: 1.5em; */
+        line-height: 70px;
     }
-    .main-example .label {
-      font-size: 0.8em;
-      top: 72px;
+
+    .count-clock .label {
+        /* font-size: 0.8em; */
+        top: 72px;
     }
-  }
+}
