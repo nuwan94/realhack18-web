@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Oswald|Roboto:400,500");
+@import url("https://fonts.googleapis.com/css?family=Material+Icons|Oswald|Roboto:400,500");
+
 /* BASIC STYLING - START */
 
 html {
@@ -46,6 +47,16 @@ p {
     color: #333
 }
 
+i:focus,
+a:focus,
+a:visited {
+    outline: none
+}
+
+.hidden {
+    display: none
+}
+
 /* BASIC STYLING - END */
 
 
@@ -77,17 +88,121 @@ p {
 
 
 
-
 /* Navbar - START */
+
+.hamburger-icon {
+    padding-top: 1.5rem
+}
+
+.hamburger-icon svg {
+    width: 80px;
+    height: 50px;
+    cursor: pointer;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0)
+}
+
+.hamburger-icon path {
+    fill: none;
+    -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+    transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+    stroke-width: 40px;
+    stroke-linecap: round;
+    stroke: #ffffff;
+    stroke-dashoffset: 0px
+}
+
+.hamburger-icon path.top,
+.hamburger-icon path.bottom {
+    stroke-dasharray: 240px 950px
+}
+
+.hamburger-icon path.middle {
+    stroke-dasharray: 240px 240px
+}
+
+.hamburger-icon.open path.top,
+.hamburger-icon.open path.bottom {
+    stroke-dashoffset: -650px
+}
+
+.hamburger-icon.open path.middle {
+    stroke-dashoffset: -115px;
+    stroke-dasharray: 1px 220px
+}
+
+#main-nav {
+    box-shadow: none;
+    padding: 0 1rem;
+    background: none;
+    position: fixed;
+    top: 0;
+    z-index: 104;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out
+}
+
+#main-nav #nav-color {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 1
+}
+
+#main-nav .nav-wrapper {
+    max-width: 1190px;
+    margin: 0 auto
+}
+
+#main-nav .brand-logo {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem
+}
+
+#main-nav .brand-logo .logo {
+    max-width: 100%;
+    /* padding-right: 1rem; */
+    max-width: 120px
+}
 
 /* Navbar - END */
 
 /* Header Section - START */
 
+
+.title-link {
+    position: relative;
+    overflow: hidden;
+    font-weight: 500;
+    color: inherit;
+    text-transform: uppercase;
+    font-size: 1.5rem
+}
+
+.title-link img {
+    max-width: 100%;
+}
+
 /* Header Section - END */
 
 /* About Section - START */
-
+.desc {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center
+}
 /* About Section - END */
 
 /* Timeline Section - START */
@@ -119,146 +234,13 @@ p {
 /* Components Styling - END */
 
 
-
-
-
-.very_small_hamburger {
-    padding-top: 1.5rem
-}
-
-.very_small_hamburger svg {
-    width: 80px;
-    height: 50px;
-    cursor: pointer;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0)
-}
-
-.very_small_hamburger path {
-    fill: none;
-    -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
-    transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
-    stroke-width: 40px;
-    stroke-linecap: round;
-    stroke: #ffffff;
-    stroke-dashoffset: 0px
-}
-
-.very_small_hamburger path.top,
-.very_small_hamburger path.bottom {
-    stroke-dasharray: 240px 950px
-}
-
-.very_small_hamburger path.middle {
-    stroke-dasharray: 240px 240px
-}
-
-.very_small_hamburger.open path.top,
-.very_small_hamburger.open path.bottom {
-    stroke-dashoffset: -650px
-}
-
-.very_small_hamburger.open path.middle {
-    stroke-dashoffset: -115px;
-    stroke-dasharray: 1px 220px
-}
-
-.ham-cont {
-    margin-left: -11px;
-    margin-top: -2px
-}
-
-.ham-cont .very_small_hamburger {
-    padding-top: 0
-}
-
-.ham-cont svg {
-    width: 60px;
-    height: 40px
-}
-
-.title-link {
-    position: relative;
-    overflow: hidden;
-    font-weight: 500;
-    color: inherit;
-    text-transform: uppercase;
-    font-size: 1.5rem
-}
-
-.title-link img {
-    max-width: 100%;
-}
-
-.desc {
-    max-width: 650px;
-    margin: 0 auto;
-    text-align: center
-}
-
-i:focus,
-a:focus,
-a:visited {
-    outline: none
-}
-
-.hidden {
-    display: none
-}
-
-#main-nav {
-    box-shadow: none;
-    padding: 0 1rem;
-    background: none;
-    position: fixed;
-    top: 0;
-    z-index: 104;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out
-}
-
-#main-nav.nav-up {
-    top: -60px
-}
-
-#main-nav #nav-color {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 1
-}
-
-#main-nav .nav-wrapper {
-    max-width: 1190px;
-    margin: 0 auto
-}
-
 /* #main-nav .logo {
     width: 120px
 } */
 
-#main-nav .brand-logo {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    height: 100%;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    letter-spacing: 0.4rem
-}
 
-#main-nav .brand-logo .logo {
-    max-width: 100%;
-    /* padding-right: 1rem; */
-    max-width: 120px
-}
+
+
 
 #main-nav .brand-logo .title-link {
     line-height: 30px
@@ -1133,6 +1115,10 @@ canvas {
     color: #212121;
     padding: .5em;
     font-size: 1.2em;
+}
+
+#timeline li time a {
+    float: right;
 }
 
 .timeline .end {

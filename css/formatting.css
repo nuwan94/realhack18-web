@@ -73,3 +73,37 @@
 .m-t-3 {
     margin-top: 3rem;
 }
+
+/* Transitions */
+
+.trans-05{
+    transition: .5s linear;
+    -webkit-transition: .5s linear;
+    -o-transition: .5s linear;
+}
+
+.trans-1{
+    transition: 1s linear;
+    -webkit-transition: 1s linear;
+    -o-transition: 1s linear;
+}
+
+/* Animations */
+
+.anim-1{
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    -o-animation-duration: 1s;
+}
+
+.anim-2{
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    -o-animation-duration: 2s;
+}
+
+.anim-3{
+    animation-duration: 3s;
+    -webkit-animation-duration: 4s;
+    -o-animation-duration: 3s;
+}

@@ -29,18 +29,20 @@
 </head>
 
 <body>
+
+    <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
-    <script>
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src =
-                'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&appId=1726493847672794&autoLogAppEvents=1';
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
+    <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat" attribution="setup_tool" page_id="235087650506664" theme-color="#212121">
+    </div>
 
     <!-- Start PreLoader Section-->
     <div class="pre-loader">
@@ -61,7 +63,7 @@
 
             <!-- Main Menu Hamburger Icon for Mobile And Screen Width less than 993px -->
             <a href="#" data-activates="mobile-demo" class="button-collapse">
-                <div class="very_small_hamburger" id="hamburger-menu">
+                <div class="hamburger-icon" id="hamburger-menu">
                     <svg viewBox="0 0 800 600">
                         <path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200"
                             class="top"></path>
@@ -168,16 +170,18 @@
                             </div>
                         </div>
                     </div> -->
-                    <p class="description">Organized by IEEE Student Branch and Software Engineering Students'
+                    <p class="desc">Organized by IEEE Student Branch and Software Engineering Students'
                         Association of
                         University of Kelaniya in Association with Pearson Lanka.</p>
-                    <a data-scroll-nav="4" class="regbtn theme-red trans-05">Register Now</a>
+                    <a data-scroll-nav="4" onclick="M.toast({html: 'Hurry Up! Register Now!'})" class="regbtn theme-red trans-05">Register
+                        Now</a>
                 </div>
             </div>
             <div class="owl-header valign-wrapper m-b-3">
-                <h3>Are you <span id="js-rotating" class="text-red">Developer?,Designer?,Marketer?,Innovator?</span> <br>We are looking for you.</h3>
+                <h3>Are you <span id="js-rotating" class="text-red">Developer?,Designer?,Marketer?,Innovator?</span>
+                    <br>We are looking for you.</h3>
             </div>
-            
+
         </div>
     </header>
     <!-- End Header Section-->
@@ -235,22 +239,30 @@
                             <li data-aos='fade-left' data-aos-delay="0">
                                 <h5>Registration Start</h5>
                                 <p>Team registration start on site.</p>
-                                <time>10<sup>th</sup> September 2018</time>
+                                <time>10<sup>th</sup> September 2018 <a class="tooltipped" data-tooltip="Add to Google Calendar"
+                                        target="_blank" href="https://calendar.google.com/calendar/r/eventedit?text=[RealHack]+Registration+Start&details=Register+Now+:+https://nuwan94.github.io/RealHackv2/&sf=true"><i
+                                            class=" material-icons">add_circle_outline</i></a></time>
                             </li>
-                            <li data-aos='fade-right' data-aos-delay="500">
+                            <li data-aos='fade-right' data-aos-delay="250">
                                 <h5>Registration End</h5>
                                 <p>End of the Registration.</p>
-                                <time>31<sup>st</sup> September 2018</time>
+                                <time>31<sup>st</sup> September 2018 <a class="tooltipped" data-tooltip="Add to Google Calendar"
+                                        target="_blank" href="https://calendar.google.com/calendar/r/eventedit?text=[RealHack]+Registration+End&details=Register+Now+:+https://nuwan94.github.io/RealHackv2/&sf=true"><i
+                                            class=" material-icons">add_circle_outline</i></a></time>
                             </li>
-                            <li data-aos='fade-left' data-aos-delay="1000">
+                            <li data-aos='fade-left' data-aos-delay="500">
                                 <h5>PreHack</h5>
                                 <p>Hackerrank Competition for selecting the best 15 teams.</p>
-                                <time>5<sup>th</sup> of October 2018</time>
+                                <time>5<sup>th</sup> of October 2018 <a class="tooltipped" data-tooltip="Add to Google Calendar"
+                                        target="_blank" href="https://calendar.google.com/calendar/r/eventedit?text=[RealHack]+PreHack&details=Find+Details+:+https://nuwan94.github.io/RealHackv2/&sf=true"><i
+                                            class=" material-icons">add_circle_outline</i></a></time>
                             </li>
-                            <li data-aos='fade-right' data-aos-delay="1500">
+                            <li data-aos='fade-right' data-aos-delay="750">
                                 <h5>RealHack</h5>
                                 <p>Winners from PreHack have to compete in the RealHack.</p>
-                                <time>15<sup>th</sup> & 16<sup>th</sup> October 2018</time>
+                                <time>15<sup>th</sup> & 16<sup>th</sup> October 2018 <a class="tooltipped" data-tooltip="Add to Google Calendar"
+                                        target="_blank" href="https://calendar.google.com/calendar/r/eventedit?text=RealHack+Competition&details=Live+Coverage+:+https://nuwan94.github.io/RealHackv2/&sf=true"><i
+                                            class=" material-icons">add_circle_outline</i></a></time>
                             </li>
                         </ul>
                         <div class="end"></div>
@@ -309,16 +321,16 @@
                 <div class="row">
                     <!-- <h5 class="m-t-1">Main Sponsers</h5> -->
                     <div class="col s12 m6 l4">
-                        <img class="sponser-logo" src="images/p-logo.jpg" alt="">
+                        <img class="sponser-logo tooltipped" data-tooltip="Golden Sponser" src="images/p-logo.jpg" alt="">
                     </div>
                     <div class="col s12 m6 l4">
-                        <img class="sponser-logo" src="images/r-logo.jpg" alt="">
+                        <img class="sponser-logo tooltipped" data-tooltip="Silver Sponser" src="images/r-logo.jpg" alt="">
                     </div>
                 </div>
                 <div class="row">
                     <!-- <h5 class="m-t-1">In Colloboration With</h5> -->
                     <div class="col s12 m4 l4">
-                        <img class="sponser-logo" src="images/h-logo.jpg" alt="">
+                        <img class="sponser-logo tooltipped" data-tooltip="Media Partner" src="images/h-logo.jpg" alt="">
                     </div>
                 </div>
 
@@ -397,9 +409,7 @@
         </div>
     </section>
     <!-- End Footer Section-->
-    <!-- Your customer chat code -->
-    <div class="fb-customerchat" attribution="setup_tool" page_id="235087650506664">
-    </div>
+
     <!-- Start Copy Rights Section-->
     <div id="copy-rights" class="col s12">
         <div class="container">
