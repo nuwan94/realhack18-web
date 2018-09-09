@@ -231,7 +231,7 @@ particlesJS("particles-js", {
 /* JQuery.Countdown Clock */
 
 $(window).on('load', function () {
-    var labels = ['Days', 'Hours', 'Minutes', 'Seconds'],
+    var labels = ['Days', 'Hours', 'Min', 'Sec'],
         eventDate = '2018/10/15 ',
         template = _.template($('#clock-template').html()),
         currDate = '00:00:00:00',
