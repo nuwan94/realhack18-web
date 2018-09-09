@@ -235,8 +235,8 @@ a:visited {
 
 #main-nav .side-nav a {
     color: #333;
-    border-bottom: 1px solid grey;
-    margin: 0 1rem
+    border-bottom: 1px solid #ddd;
+    /* margin: 0 1rem */
 }
 
 #main-nav .side-nav .home {
@@ -420,7 +420,7 @@ a:visited {
 
 .timeline li {
     background: #212121;
-    margin: 3em;
+    margin: 3em 0;
     position: relative;
 }
 
@@ -579,13 +579,14 @@ a:visited {
 
 /* Parteners Section - START */
 
-.sponsers .row{
+/* .sponsers .row{
     padding: 1em;
     background:#fff9; 
-}
+} */
 
 .sponsers h5 {
     text-transform: uppercase;
+    min-height: 2em;
 }
 
 .sponser-logo {
@@ -636,22 +637,14 @@ a:visited {
     padding-top: 1rem
 }
 
-#footer button {
+#footer .regbtn {
     width: 100%;
     padding: 0.5rem 0;
-    font-size: 1.4rem;
-    color: #ffffff;
     margin-top: 2rem;
     -webkit-transition: all 0.4s ease-out;
     transition: all 0.4s ease-out;
-    display: inline-block;
     border: none;
-    border-radius: 10px;
     outline: none;
-}
-
-#footer button:hover {
-    background: #aa5dab
 }
 
 #footer .prefix {
