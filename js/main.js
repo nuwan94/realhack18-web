@@ -7,9 +7,9 @@
             $('body').css('position', 'static'),
             AOS.refresh(),
             $("#numOfTeams").html(numberOfTeam),
-            $("#Place1").html(Prices[0]),
-            $("#Place2").html(Prices[1]),
-            $("#Place3").html(Prices[2])
+            $("#Place1 span").html(Prices[0]),
+            $("#Place2 span").html(Prices[1]),
+            $("#Place3 span").html(Prices[2])
     }), $(document).ready(function () {
 
         function a(e) {
@@ -303,6 +303,7 @@ $(document).ready(function(){
     $('.tooltipped').tooltip({
         position:'top'
     });
+    $('.modal').modal();
   });
 
 $("#js-rotating").Morphext({

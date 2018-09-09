@@ -9111,8 +9111,7 @@ Vel = jQuery ? jQuery.Velocity : $ ? $.Velocity : Velocity, Materialize.Vel = Ve
 
 
 /* AOS JS 
-    Animate on Scoll
-
+    Animate-On-Scoll JS
 */
 
 
@@ -9642,6 +9641,7 @@ Vel = jQuery ? jQuery.Velocity : $ ? $.Velocity : Velocity, Materialize.Vel = Ve
         t.default = n
     }])
 });
+
 //# sourceMappingURL=aos.js.map
 
 /**
