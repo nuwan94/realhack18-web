@@ -1147,4 +1147,11 @@ a:visited {
 }
 
 /* FlipClock - END */
+
+/* Facebook Customer Chat - START */
+.fb_customer_chat_bubble_pop_in {
+    z-index: 9000 !important;
+}
+
+/* Facebook Customer Chat - END */
 /* Components Styling - END */
