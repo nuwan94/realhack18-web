@@ -33,12 +33,29 @@
     <!-- Load Facebook SDK for JavaScript -->
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <script>window.twttr = (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0],
+          t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+        t._e = [];
+        t.ready = function(f) {
+          t._e.push(f);
+        };
+        return t;
+      }(document, "script", "twitter-wjs"));
+    </script>
 
     <!-- Your customer chat code -->
     <div class="fb-customerchat" attribution="setup_tool" page_id="235087650506664" theme-color="#212121">
@@ -141,14 +158,18 @@
                     <div id="count-clock" class="count-clock"></div>
                     <p class="desc">Organized by IEEE Student Branch and Software Engineering Students'
                         Association of
-                        University of Kelaniya in Association with Pearson Lanka PVT LTD.</p>
-                    <a data-scroll-nav="4" onclick="M.toast({html: 'Hurry Up! Register Now!'})" class="regbtn theme-red trans-05">Register
-                        Now</a>
+                        University of Kelaniya.</p>
+                        <p class="desc organizer">
+                            <img src="images/ieeeuok-logo.png"/>
+                            <img src="images/sesauok-logo.png"/>
+                        </p>
                 </div>
             </div>
-            <div class="owl-header valign-wrapper m-b-3">
-                <h3>Are you a <span id="js-rotating" class="text-red">Developer?,Designer?,Marketer?,Innovator?</span>
-                    <br>We are looking for you.</h3>
+            <div class="text-anim-header center-align m-b-3">
+                <h3 class="left-align">Are you a <span id="js-rotating" class="text-red">Developer?,Designer?,Marketer?,Innovator?</span>
+                    <br>We are looking for you.</h3><br>
+                    <a data-scroll-nav="4" class="regbtn theme-red trans-05">Register
+                            Now</a>
             </div>
 
         </div>
@@ -171,7 +192,8 @@
                         <i class="fa fa-code fa-3x theme-black"></i>
                     </div>
                     <h5 class="p-t-1">Programming</h5>
-                    <p class="p-b-2">To the passionate programmers who acquires skills through practice, REALHACK is the place to be.</p>
+                    <p class="p-b-2">To the passionate programmers who acquires skills through practice, REALHACK is
+                        the place to be.</p>
                 </div>
                 <div class="col s12 l4">
                     <div class="icon">
@@ -201,28 +223,28 @@
                     <div class="timeline">
                         <div class="timeline-start"></div>
                         <ul>
-                            <li data-aos='fade-left' data-aos-delay="500">
+                            <li class="effect1" data-aos='fade-left' data-aos-delay="500">
                                 <h5>Registration Start</h5>
                                 <p>Teams registration start on the website.</p>
                                 <time>11<sup>th</sup> September 2018 <a class="tooltipped" data-tooltip="Add to Google Calendar"
                                         target="_blank" href="https://calendar.google.com/calendar/r/eventedit?text=[RealHack]+Registration+Start&details=Register+Now+:+link&sf=true"><i
                                             class=" material-icons">add_circle_outline</i></a></time>
                             </li>
-                            <li data-aos='fade-right' data-aos-delay="1000">
+                            <li class="effect1" data-aos='fade-right' data-aos-delay="1000">
                                 <h5>Registration Close</h5>
                                 <p>Registration close and teams will be notified about the Prehack</p>
                                 <time>31<sup>st</sup> September 2018 <a class="tooltipped" data-tooltip="Add to Google Calendar"
                                         target="_blank" href="https://calendar.google.com/calendar/r/eventedit?text=[RealHack]+Registration+End&details=Register+Now+:+link&sf=true"><i
                                             class=" material-icons">add_circle_outline</i></a></time>
                             </li>
-                            <li data-aos='fade-left' data-aos-delay="1500">
+                            <li class="effect1" data-aos='fade-left' data-aos-delay="1500">
                                 <h5>PreHack</h5>
                                 <p>Hackerrank Competition for selecting the best 10 teams.</p>
                                 <time>5<sup>th</sup> of October 2018 <a class="tooltipped" data-tooltip="Add to Google Calendar"
                                         target="_blank" href="https://calendar.google.com/calendar/r/eventedit?text=[RealHack]+PreHack&details=Find+Details+:+link&sf=true"><i
                                             class=" material-icons">add_circle_outline</i></a></time>
                             </li>
-                            <li data-aos='fade-right' data-aos-delay="2000">
+                            <li class="effect1" data-aos='fade-right' data-aos-delay="2000">
                                 <h5>RealHack</h5>
                                 <p>Winners from PreHack have to compete at RealHack.</p>
                                 <time>15<sup>th</sup> & 16<sup>th</sup> October 2018 <a class="tooltipped" data-tooltip="Add to Google Calendar"
@@ -282,8 +304,8 @@
     <section id="sponsership" data-scroll-index="5" class="main-section center-align ">
         <div class="container">
             <h4 class="section-header m-t-3">Partners</h4>
-            <p class="desc">RealHack is proud to have Pearson LTD as its main sponsor and Redbull Sri Lanka as
-                Co-Sponsers. We have few parteners who help us to success this event also.</p>
+            <p class="desc">RealHack is proud to have Pearson PVT LTD as its main sponsor and Redbull Sri Lanka as
+                Co-Sponser. RealHack is partnered with some leading names in the country to drive the event towards success.</p>
             <div class="sponsers m-t-3">
                 <div class="row effect8">
                     <h5 class="m-t-1">Official Event Partner</h5>
@@ -360,37 +382,45 @@
         <div class="footer-content p-t-3 left-align">
             <div class="container">
                 <div class="row">
-                    <div class="about col s12 m6 l4">
+                    <div class="about col s12 m6 l4 m-b-2">
                         <h5 class="p-b-2">About Us</h5>
                         <img class="responsive-img logo" src="./images/logo-top.png" alt="logo image">
                         <br>
-                        <!-- Your Info -->
-                        <p>Inter-University Hackathon Organizing by Software Engineering Students' Association and IEEE
-                            Student Branch University of Kelaniya. 2018 &copy;</p>
+                        <p>Inter-University Hackathon Organized by Software Engineering Students' Association and IEEE
+                            Student Branch of University of Kelaniya. 2018 &copy;</p>
 
                     </div>
 
-                    <!-- News -->
-                    <div class="news col s12 m6 l4">
+                    <div class="news col s12 m6 l4 m-b-2">
                         <h5 class="p-b-2">Contact</h5>
                         <p class="p-b-1">
                             <i class="fa fa-map-marker"></i>
                             <span>SESA, University of Kelaniya, Sri Lanka.</span><br>
                             <i class="fa fa-phone"></i>
-                            <a href="tel:+94770429201"> +94 77 042 9201 (Tharuka)</a><br>
+                            <a href="tel:+94770429201"> +94 77 042 9201 (Tharuka Vishwajith)</a><br>
+                            <i class="fa fa-phone"></i>
+                            <a href="tel:+94716255642"> +94 71 625 5642 (Isuru Ranweera)</a><br>
                             <i class="fa fa-paper-plane"></i>
                             <a href="mailto:sesa.uok@gmail.com">realhack@gmail.com</a>
                         </p>
                     </div>
 
-                    <div class="tags col s12 m6 l4">
+                    <div class="tags col s12 m6 l4 m-b-2">
                         <h5 class="p-b-2">Socail Media</h5>
                         <div class="social-media">
-                                <a href="http://fb.com/realhacklk" target="_blank"><i class="fab fa-3x fa-facebook"></i></a>
-                                <a href="http://fb.com/realhacklk" target="_blank"><i class="fab fa-3x fa-twitter-square"></i></a>
-                                <a href="http://fb.com/realhacklk" target="_blank"><i class="fab fa-3x fa-instagram"></i></a>
+                            <a href="http://fb.com/realhacklk" target="_blank"><i class="fab fa-3x fa-facebook"></i></a>
+                            <a href="http://fb.com/realhacklk" target="_blank"><i class="fab fa-3x fa-twitter-square"></i></a>
+                            <a href="http://fb.com/realhacklk" target="_blank"><i class="fab fa-3x fa-instagram"></i></a>
                         </div>
-                        <div class="fb-like" data-href="https://facebook.com/realhacklk" data-layout="standard" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+                        <div class="social-plugin">
+                            <div class="fb-like" data-href="https://facebook.com/realhacklk" data-layout="button_count"
+                                data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
+                            <a class="twitter-share-button"
+                                href="https://twitter.com/intent/tweet?text=RealHack by UOK - Registration Start Soon #realhack #uok">
+                              Tweet</a>
+                              <a class="twitter-follow-button" href="https://twitter.com/realhacklk" data-show-count="false">Follow @realhacklk</a>
+                        </div>
+
                         <!-- <div class="fb-page" data-href="https://www.facebook.com/realhacklk/" data-small-header="true"
                             data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true">
                             <blockquote cite="https://www.facebook.com/realhacklk/" class="fb-xfbml-parse-ignore"><a
@@ -414,9 +444,7 @@
     <!-- Start Copy Rights Section-->
     <div id="copy-rights" class="col s12">
         <div class="container">
-            <p>Copyright &copy; 2018 | RealHack Organized by
-                <a target="_blank" href="https://facebook.com/ieeekln">IEEE SB UOK</a> & <a target="_blank">SESA
-                    - UOK</a></a>
+            <p>Copyright &copy; 2018 | Designed by by <a target="_blank">Design Team - SESA</a></a>
             </p>
         </div>
     </div>
@@ -427,7 +455,8 @@
     <div id="registration-modal" class="modal">
         <div class="modal-content">
             <!-- <h4>Registration</h4> -->
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSetw5WTvfrBA8ry74ADuaaUwedcgg47zMexYULc3vkpyZb2ig/viewform?embedded=true" width="640" height="1055" frameborder="0" marginheight="0" marginwidth="0" style="width:100%;min-height:100%;">Loading...</iframe>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSetw5WTvfrBA8ry74ADuaaUwedcgg47zMexYULc3vkpyZb2ig/viewform?embedded=true"
+                width="640" height="1055" frameborder="0" marginheight="0" marginwidth="0" style="width:100%;min-height:100%;">Loading...</iframe>
             <!-- <div class="row">
                 <form class="col s12">
                     <div class="row">
@@ -494,11 +523,11 @@
                 </form>
             </div>
         </div> -->
-    </div>
+        </div>
 
-    <!-- Clock Template -->
-    <script type="text/template" id="clock-template">
-        <div class="time <%= label %>">
+        <!-- Clock Template -->
+        <script type="text/template" id="clock-template">
+            <div class="time <%= label %>">
           <span class="count curr top"><%= curr %></span>
           <span class="count next top"><%= next %></span>
           <span class="count next bottom"><%= next %></span>
@@ -507,13 +536,13 @@
         </div>
     </script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/jquery.countdown.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
-    <script src="js/morphext.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/stat.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/jquery.countdown.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+        <script src="js/morphext.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/stat.js"></script>
 </body>
 
 </html>
