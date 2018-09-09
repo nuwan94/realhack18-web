@@ -344,18 +344,13 @@ a:visited {
 }
 
 .organizer{
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center
+    display: block;
 }
 
 .organizer img{
     margin: 1em;
+    max-width: 40%;
+    display: inline-block;
 }
 
 /* Header Section - END */
@@ -803,11 +798,11 @@ a:visited {
     #main-header .title-link {
         font-size: 10vw;
     }
-    #main-header:not(.parallax-main-header) {
+    #main-header {
         height: auto;
         min-height: inherit
     }
-    #main-header:not(.parallax-main-header) .header-section {
+    #main-header .header-section {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -webkit-flex-direction: column;
@@ -821,16 +816,16 @@ a:visited {
         -ms-flex-pack: justify;
         justify-content: space-between
     }
-    #main-header:not(.parallax-main-header) iframe {
+    #main-header iframe {
         width: 400px;
         height: 450px
     }
-    #main-header:not(.parallax-main-header) .header-text {
+    #main-header .header-text {
         width: 80%;
         margin: 0 auto;
         padding: 5rem 0
     }
-    #main-header:not(.parallax-main-header) .text-anim-header {
+    #main-header .text-anim-header {
         width: 100%;
         max-width: 80%;
     }
