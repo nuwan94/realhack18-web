@@ -6,10 +6,7 @@
             $('.parallax').parallax(),
             $('body').css('position', 'static'),
             AOS.refresh(),
-            $("#numOfTeams").html(numberOfTeam),
-            $("#Place1 span").html(Prices[0]),
-            $("#Place2 span").html(Prices[1]),
-            $("#Place3 span").html(Prices[2])
+            $("#numOfTeams").html(numberOfTeam)
     }), $(document).ready(function () {
 
         function a(e) {
