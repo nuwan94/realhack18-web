@@ -63,8 +63,8 @@
 
     <!-- Start PreLoader Section-->
     <div class="pre-loader">
-        <div class="loader">
-            <div class="loader2"></div>
+        <div class="loader-container">
+            <div class="spin-cones"></div>
         </div>
     </div>
     <!-- End PreLoader Section-->
@@ -223,28 +223,28 @@
                     <div class="timeline">
                         <div class="timeline-start"></div>
                         <ul>
-                            <li class="effect1" data-aos='fade-left' data-aos-delay="500">
+                            <li class="effect1" data-aos='fade-left' data-aos-delay="100">
                                 <h5>Registration Start</h5>
                                 <p>Teams registration start on the website.</p>
                                 <time>11<sup>th</sup> September 2018 <a class="tooltipped" data-tooltip="Add to Google Calendar"
                                         target="_blank" href="https://calendar.google.com/calendar/r/eventedit?text=[RealHack]+Registration+Start&details=Register+Now+:+link&sf=true"><i
                                             class=" material-icons">add_circle_outline</i></a></time>
                             </li>
-                            <li class="effect1" data-aos='fade-right' data-aos-delay="1000">
+                            <li class="effect1" data-aos='fade-right' data-aos-delay="100">
                                 <h5>Registration Close</h5>
                                 <p>Registration close and teams will be notified about the Prehack</p>
                                 <time>31<sup>st</sup> September 2018 <a class="tooltipped" data-tooltip="Add to Google Calendar"
                                         target="_blank" href="https://calendar.google.com/calendar/r/eventedit?text=[RealHack]+Registration+End&details=Register+Now+:+link&sf=true"><i
                                             class=" material-icons">add_circle_outline</i></a></time>
                             </li>
-                            <li class="effect1" data-aos='fade-left' data-aos-delay="1500">
+                            <li class="effect1" data-aos='fade-left' data-aos-delay="100">
                                 <h5>PreHack</h5>
                                 <p>Hackerrank Competition for selecting the best 10 teams.</p>
                                 <time>5<sup>th</sup> of October 2018 <a class="tooltipped" data-tooltip="Add to Google Calendar"
                                         target="_blank" href="https://calendar.google.com/calendar/r/eventedit?text=[RealHack]+PreHack&details=Find+Details+:+link&sf=true"><i
                                             class=" material-icons">add_circle_outline</i></a></time>
                             </li>
-                            <li class="effect1" data-aos='fade-right' data-aos-delay="2000">
+                            <li class="effect1" data-aos='fade-right' data-aos-delay="100">
                                 <h5>RealHack</h5>
                                 <p>Winners from PreHack have to compete at RealHack.</p>
                                 <time>15<sup>th</sup> & 16<sup>th</sup> October 2018 <a class="tooltipped" data-tooltip="Add to Google Calendar"
@@ -266,16 +266,15 @@
         <div class="container">
             <h4 class="section-header m-t-3 p-b-2">Registration</h4>
             <div class="row p-t-2">
-                <div class="col s12 m4 l4">
+                <div class="col s12 m4 l4" data-aos='fade-up' data-aos-delay="100">
                     <div class="place-label theme-purple-light">1<sup>st</sup> Place </div>
                     <div id="Place1" class="plaze-prize effect1"><span></span></div>
                 </div>
-                <div class="
-                        col s12 m4 l4">
+                <div class="col s12 m4 l4" data-aos='fade-up' data-aos-delay="100">
                     <div class="place-label theme-pink">2<sup>nd</sup> Place </div>
                     <div id="Place2" class="plaze-prize effect1"><span></span></div>
                 </div>
-                <div class=" col s12 m4 l4">
+                <div class=" col s12 m4 l4" data-aos='fade-up' data-aos-delay="100">
                     <div class="place-label theme-cream">3<sup>rd</sup> Place </div>
                     <div id="Place3" class="plaze-prize effect1"><span></span></div>
                 </div>
@@ -290,10 +289,8 @@
                             </div> -->
             </div>
             <div class="row">
-                <h5>Hurry Up!</h5>
-                <h3 class="counter" id="numOfTeams">00</h3>
-                <h5>Teams already registered.</h5>
-                <a class="regbtn waves-effect waves-light theme-red trans-05 modal-trigger" href="#registration-modal">Register
+                <h5 class="p-t-2 p-b-1">Hurry Up! <span class="counter text-red" id="numOfTeams">00</span> Teams already registered.</h5>
+                <a class="regbtn waves-effect waves-light theme-red trans-05 modal-trigger" data-aos='fade-down' data-aos-delay="300" href="#registration-modal">Register
                     Now</a>
             </div>
         </div>
@@ -307,13 +304,13 @@
             <p class="desc">RealHack is proud to have Pearson PVT LTD as its main sponsor and Redbull Sri Lanka as
                 Co-Sponser. RealHack is partnered with some leading names in the country to drive the event towards success.</p>
             <div class="sponsers m-t-3">
-                <div class="row effect8">
+                <div class="row effect8" data-aos='fade-up' data-aos-delay="100">
                     <h5 class="m-t-1">Official Event Partner</h5>
                     <div class="col s12 m12 l12">
                         <img class="sponser-logo m-tb-2" src="images/sp-p-logo.png" alt="">
                     </div>
                 </div>
-                <div class="row effect8">
+                <div class="row effect8" data-aos='fade-up' data-aos-delay="100">
                     <h5 class="m-t-1">Supporting Partners</h5>
                     <div class="col s12 m6 l4">
                         <img class="sponser-logo m-tb-1" src="images/sp-r-logo.jpg" alt="">
@@ -321,7 +318,7 @@
                 </div>
 
 
-                <div class="row effect8">
+                <div class="row effect8" data-aos='fade-up' data-aos-delay="100">
                     <h5 class="m-t-1">Media Partners</h5>
                     <div class="col s12 m4 l4">
                         <img class="sponser-logo m-tb-1" src="images/sp-h-logo.png" alt="">
@@ -349,13 +346,13 @@
                                     <label for="contact-name">Name *</label>
                                 </div>
                                 <!-- Email Field -->
-                                <div class="input-field col s12 m-t-1" data-aos="fade-up" data-aos-delay="250">
+                                <div class="input-field col s12 m-t-1" data-aos="fade-up" data-aos-delay="100">
                                     <i class="fa fa-paper-plane prefix" aria-hidden="true"></i>
                                     <input id="contact-email" type="email" class="validate" name="email" required>
                                     <label data-error="Invalid Email" for="contact-email">Email *</label>
                                 </div>
                                 <!-- Message Field -->
-                                <div class="input-field col s12 m-t-1" data-aos="fade-up" data-aos-delay="500">
+                                <div class="input-field col s12 m-t-1" data-aos="fade-up" data-aos-delay="100">
                                     <i class="fa fa-envelope prefix" aria-hidden="true"></i>
                                     <textarea id="contact-message" class="materialize-textarea validate" minlength="20"
                                         name="message" required></textarea>
@@ -364,7 +361,7 @@
                                 <!-- Form Alert Message -->
                                 <div class="col s12 alert-message" id="contact-alert-message"></div>
                                 <!-- Submit Button -->
-                                <div class="col s12" data-aos="fade-up" data-aos-delay="750">
+                                <div class="col s12" data-aos="fade-up" data-aos-delay="100">
                                     <button id="contact-submit" class="theme-purple waves-effect waves-light" type="submit">Send</button>
                                 </div>
                                 <!-- ! Anti-spam field ! Invisible for users, it will trick most bots to fill it and prevent the email from being sent to you -->
@@ -383,7 +380,7 @@
             <div class="container">
                 <div class="row">
                     <div class="about col s12 m6 l4 m-b-2">
-                        <h5 class="p-b-2">About Us</h5>
+                        <h5 class="p-b-1">About Us</h5>
                         <img class="responsive-img logo" src="./images/logo-top.png" alt="logo image">
                         <br>
                         <p>Inter-University Hackathon Organized by Software Engineering Students' Association and IEEE
@@ -392,7 +389,7 @@
                     </div>
 
                     <div class="news col s12 m6 l4 m-b-2">
-                        <h5 class="p-b-2">Contact</h5>
+                        <h5 class="p-b-1">Contact</h5>
                         <p class="p-b-1">
                             <i class="fa fa-map-marker"></i>
                             <span>SESA, University of Kelaniya, Sri Lanka.</span><br>
@@ -406,7 +403,7 @@
                     </div>
 
                     <div class="tags col s12 m6 l4 m-b-2">
-                        <h5 class="p-b-2">Socail Media</h5>
+                        <h5 class="p-b-1">Socail Media</h5>
                         <div class="social-media">
                             <a href="http://fb.com/realhacklk" target="_blank"><i class="fab fa-3x fa-facebook"></i></a>
                             <a href="http://fb.com/realhacklk" target="_blank"><i class="fab fa-3x fa-twitter-square"></i></a>
