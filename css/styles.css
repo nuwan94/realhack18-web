@@ -524,6 +524,20 @@ a:visited {
 
 /* Timeline Section - END */
 
+/* Awards Section - START */
+
+.awards-img {
+    filter: contrast(150%);
+    -webkit-filter: contrast(150%);
+    width: 100%;
+}
+
+.plaze-prize {
+    font-size: 2em;
+}
+
+/* Awards Section - END */
+
 /* Registration Section - START */
 
 #registration {
@@ -547,20 +561,7 @@ a:visited {
 #registration .regbtn {
     width: 100%;
     padding: 1em;
-}
-
-.place-label {
-    /* background: #333; */
-    color: #ffff;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    margin: 1em 0 0;
-}
-
-.plaze-prize {
-    font-size: 3em;
-    color: #333;
-    background: #fff;
+    transition: .5s;
 }
 
 #registration .download-link {
