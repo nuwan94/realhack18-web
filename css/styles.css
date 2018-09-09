@@ -421,7 +421,7 @@ canvas {
     z-index: 101
 }
 #main-header .header-text h4{
-    margin:0;
+    margin:0
 }
 
 #main-header .description {
@@ -616,6 +616,10 @@ canvas {
     padding:1em 0.5em;
 }
 
+#footer .fb_iframe_widget {
+    display: block;
+    padding: 1em 0;
+}
 
 #footer .social-media a {
     margin: 1em .5em;
@@ -623,10 +627,15 @@ canvas {
     transition: .5s linear;
 }
 
+
+
+
 #footer .social-media a:hover {
     filter: none;
     color:#fff;
 }
+
+
 #footer button {
     width: 100%;
     padding: 0.5rem 0;
