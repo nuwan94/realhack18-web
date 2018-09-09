@@ -701,12 +701,13 @@ canvas {
 
 #footer .social-media a {
     margin: 1em .5em;
-    filter: grayscale;
+    filter: grayscale(1);
+    transition: .5s linear;
 }
 
 #footer .social-media a:hover {
     filter: none;
-    opacity: 0.8;
+    color:#fff;
 }
 #footer button {
     width: 80%;
@@ -729,7 +730,7 @@ canvas {
     transform: translateY(-2px)
 }
 
-.fa-facebook {
+/* .fa-facebook {
     color: #3b5998;
 }
 
@@ -739,7 +740,7 @@ canvas {
 
 .fa-instagram {
     color: #c13584;
-}
+} */
 
 #footer .footer-content .container{
     max-width: 75%;
