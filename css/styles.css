@@ -369,6 +369,15 @@ a:visited {
     color: #ffffff
 }
 
+#about-us h4,
+#about-us h5{
+    color:#fff;
+}
+
+#about-us p {
+    color: #888;
+}
+
 .desc {
     max-width: 650px;
     margin: 0 auto;
@@ -523,8 +532,11 @@ a:visited {
 }
 
 /* Timeline Section - END */
-
 /* Awards & Registration Section - START */
+#awards {
+    padding-bottom: 0;
+}
+
 .awards-img {
     filter: contrast(150%);
     -webkit-filter: contrast(150%);
@@ -542,7 +554,8 @@ a:visited {
     -ms-flex-align: center;
     -ms-grid-row-align: center;
     align-items: center;
-    color: #ffffff
+    color: #ffffff;
+    padding-top: 0;
 }
 
 #registration h3,
@@ -572,7 +585,6 @@ a:visited {
 }
 
 /* Awards & Registration Section - END */
-
 /* Parteners Section - START */
 .sponsers h5 {
     text-transform: uppercase;
@@ -585,11 +597,11 @@ a:visited {
 }
 
 /* Parteners Section - END */
-
 /* Footer Section - START */
 #footer {
     position: relative;
-    background: url("../images/footer.png") repeat;
+    background: #000;
+    /* background: url("../images/footer.png") repeat; */
     padding-bottom: 1rem
 }
 
@@ -666,6 +678,12 @@ a:visited {
     margin: 0 5px;
 }
 
+#footer .footer-content p span {
+    margin-left: 2em;
+    display: inline-block;
+    margin-top: -2em;
+}
+
 #footer .footer-content .title {
     width: 150px;
 }
@@ -729,7 +747,8 @@ a:visited {
 }
 
 #copy-rights {
-    background: url("../images/footer.png") repeat
+    background:#000;
+    /* background: url("../images/footer.png") repeat */
 }
 
 #copy-rights p {
@@ -744,7 +763,6 @@ a:visited {
 }
 
 /* Footer Section - END */
-
 /* Responsive Styling - START */
 @media screen and (min-width: 1400px) {
     #main-header .title-link {
@@ -867,7 +885,6 @@ a:visited {
 }
 
 /* Responsive Styling - END */
-
 /* Components Styling - START */
 /* PreLoader - START */
 .pre-loader {
@@ -961,7 +978,6 @@ a:visited {
 }
 
 /* PreLoader - END */
-
 /* ParticleJS - START */
 #particles-js {
     position: absolute;
@@ -971,7 +987,6 @@ a:visited {
 }
 
 /* ParticleJS - END */
-
 /* FlipClock - START */
 .count-clock {
     margin: 30px auto;
@@ -1147,7 +1162,6 @@ a:visited {
 }
 
 /* FlipClock - END */
-
 /* Facebook Customer Chat - START */
 .fb_customer_chat_bubble_pop_in {
     z-index: 9000 !important;
