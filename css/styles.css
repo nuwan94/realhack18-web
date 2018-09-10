@@ -375,7 +375,7 @@ a:visited {
 }
 
 #about-us p {
-    color: #888;
+    color: #ddd;
 }
 
 .desc {
@@ -405,7 +405,7 @@ a:visited {
 
 .timeline p {
     color: inherit;
-    padding: 0 .5em;
+    padding: 0 1.5em;
 }
 
 .timeline ul {
@@ -416,17 +416,17 @@ a:visited {
 }
 
 .timeline li {
-    background: #212121;
+    /* background: #212121; */
     margin: 3em 0;
     position: relative;
 }
 
 .timeline li:nth-child(even) {
-    background: #aa5dab;
+    /* background: #aa5dab; */
 }
 
 .timeline li:nth-child(odd) {
-    background: #f1296a;
+    /* background: #f1296a; */
 }
 
 .timeline li:before {
@@ -485,7 +485,6 @@ a:visited {
 .timeline .past-event {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-    opacity: 0.5;
     pointer-events: none;
 }
 
@@ -506,8 +505,8 @@ a:visited {
     }
 
     .timeline li {
-        width: 42%;
-        margin: 0 0 1em;
+        width: 45%;
+        margin: 0 0 2em;
     }
 
     .timeline li:nth-child(even) {
@@ -517,6 +516,7 @@ a:visited {
 
     .timeline li:nth-child(odd) {
         float: left;
+        margin-bottom: 3em;
     }
 
     .timeline li:nth-child(odd):before {
@@ -594,6 +594,11 @@ a:visited {
 .sponser-logo {
     max-width: 100%;
     border-radius: 1em;
+}
+@media screen and (max-width: 600px) {
+.sub-sponser-logo {
+    max-width: 50%;
+}
 }
 
 /* Parteners Section - END */
